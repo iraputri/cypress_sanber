@@ -1,6 +1,5 @@
 import LoginPage from '../../support/pages/LoginPage';
 import ResetPasswordPage from '../../support/pages/ResetPasswordPage';
-import loginData from '../../fixtures/loginData.json';
 import resetPasswordData from '../../fixtures/resetPasswordData.json';
 
 describe('orangehrm login with POM', () => {
