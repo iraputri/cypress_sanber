@@ -1,4 +1,5 @@
 import LoginPage from '../../support/pages/LoginPage';
+import DashboardPage from '../../support/pages/DashboardPage';
 import loginData from '../../fixtures/loginData.json';
 
 describe('orangehrm login with POM', () => {
@@ -29,9 +30,9 @@ describe('orangehrm login with POM', () => {
         cy.wait('@summaryRequest').its('response.statusCode').should('equal', 200);
     
         LoginPage.getDropdown().should('be.visible');
-        LoginPage.getBrandBanner().should('be.visible');
-        LoginPage.getBreadcrumb().should('exist');
-        LoginPage.getAttendanceChart().should('be.visible');
+        DashboardPage.getBrandBanner().should('be.visible');
+        DashboardPage.getBreadcrumb().should('exist');
+        DashboardPage.getAttendanceChart().should('be.visible');
     
         LoginPage.getLoginError().should('not.exist');
     })
@@ -141,9 +142,9 @@ describe('orangehrm login with POM', () => {
         cy.wait('@summaryRequest').its('response.statusCode').should('equal', 200);
     
         LoginPage.getDropdown().should('be.visible');
-        LoginPage.getBrandBanner().should('be.visible');
-        LoginPage.getBreadcrumb().should('exist');
-        LoginPage.getAttendanceChart().should('be.visible');
+        DashboardPage.getBrandBanner().should('be.visible');
+        DashboardPage.getBreadcrumb().should('exist');
+        DashboardPage.getAttendanceChart().should('be.visible');
     
         LoginPage.getLoginError().should('not.exist');
     })

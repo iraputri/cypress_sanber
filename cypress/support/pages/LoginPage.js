@@ -31,18 +31,6 @@ class LoginPage{
         return cy.get('.orangehrm-login-button');
     }
 
-    getBrandBanner(){
-        return cy.get('.oxd-brand-banner');
-    }
-
-    getBreadcrumb(){
-        return cy.get('.oxd-topbar-header-breadcrumb-module');
-    }
-
-    getAttendanceChart(){
-        return cy.get('.emp-attendance-chart');
-    }
-
     getLoginError(){
         return cy.get('.orangehrm-login-error');
     }
