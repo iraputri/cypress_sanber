@@ -1,0 +1,4 @@
+[
+    { "status" : "exist", "id" : 2, "responseCode" : 200, "expectData" : true},
+    { "status" : "not exist", "id" : 1000, "responseCode" : 404, "expectData" : false }
+]

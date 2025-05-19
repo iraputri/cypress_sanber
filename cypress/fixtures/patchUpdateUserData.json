@@ -1,0 +1,6 @@
+[
+    { "status" : "name & job are not empty", "id" : 1, "name" : "Jane", "job" : "Product Owner"},
+    { "status" : "empty job", "id" : 1, "name" : "John", "job" : "Engineer"},
+    { "status" : "empty name", "id" : 1, "name" : "Jessica", "job" : "Quality Analyst"},
+    { "status" : "empty name & password", "id" : 1, "name" : "", "job" : ""}
+]

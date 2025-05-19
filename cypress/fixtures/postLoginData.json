@@ -1,0 +1,11 @@
+[
+    { "status" : "valid email & valid password", "responseCode" : 200, "error" : "",  "email" : "eve.holt@reqres.in", "password" : "pistol"},
+    { "status" : "valid email & invalid password", "responseCode" : 200, "error" : "", "email" : "eve.holt@reqres.in", "password" : "random"},
+    { "status" : "invalid email & valid password", "responseCode" : 400, "error": "user not found", "email" : "sydney@fife", "password" : "pistol"},
+    { "status" : "empty password", "responseCode" : 400, "error": "Missing password", "email" : "eve.holt@reqres.in", "password" : ""},
+    { "status" : "empty email & password", "responseCode" : 400, "error": "Missing email or username", "email" : "", "password" : ""},
+    { "status" : "empty email", "responseCode" : 400, "error": "Missing email or username", "email" : "", "password" : "pistol"},
+    { "status" : "unsend password", "responseCode" : 400, "error": "Missing password", "email" : "eve.holt@reqres.in"},
+    { "status" : "unsend email", "responseCode" : 400, "error": "Missing email or username", "password" : "pistol"},
+    { "status" : "unsend email & password",  "responseCode" : 400, "error": "Missing email or username"}
+]
